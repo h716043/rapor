@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>YILDIZHAN POS - E-Rapor</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="content-type" content="text/html; charset=ISO-8859-9">
+ <meta name="author" content="YILDIZHAN POS - E-Rapor">
+<SCRIPT LANGUAGE="JavaScript">
+
+function Login(){
+var done=0;
+
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (password=="1234") { window.location="./liste.htm"; done=1; }
+
+if (done==0) { alert("yanlış şifre!"); }
+}
+
+</SCRIPT>
+ 
+
+ 
+<BODY>
+ 
+<center>
+<form name=login>
+<table width=200 border=1 cellpadding=3>
+<tr><td colspan=2><center><font size="+2"><b>Giriş Yapınız</b></font></center></td></tr>
+<tr><td><center><input type=text name=password></center></td></tr>
+<tr><td colspan=2 align=center><input type=button value="Giriş" onClick="Login()"></td></tr>
+</table>
+</form>
+</center>
